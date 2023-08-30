@@ -1,8 +1,6 @@
 import streamlit as st
-st.write("""Streamlit application
-        This Application finds the maximum number among the two numbers
-""")
-def app_logic(num_one, num_two, num_three):
+st.header("Streamlit application")
+def sapp_logic(num_one, num_two, num_three):
     maximum=num_one
     if maximum < num_two:
         maximum=num_two
