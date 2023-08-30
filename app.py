@@ -12,7 +12,5 @@ def app_logic():
     
     return maximum
 
-largest=None
 largest=app_logic()
-if largest!=None:
-    st.subheader(f"The maximum value is : {largest}")
+st.subheader(f"The maximum value is : {largest}")
