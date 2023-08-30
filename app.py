@@ -1,6 +1,9 @@
 import streamlit as st
 st.header("Find the Maximum Number")
-def app_logic(num_one, num_two, num_three):
+def app_logic():
+    num_one=st.number_input("First number")
+    num_two=st.number_input("Second number")
+    num_three=st.number_input("Third number")
     maximum=num_one
     if maximum < num_two:
         maximum=num_two
@@ -9,8 +12,7 @@ def app_logic(num_one, num_two, num_three):
     
     return maximum
 
-num_one=st.number_input("First number")
-num_two=st.number_input("Second number")
-num_three=st.number_input("Third number")
-largest=app_logic(num_one, num_two, num_three)
-st.subheader(f"The maximum value is : {largest}")
+largest=None
+largest=app_logic()
+if largest!=None:
+    st.subheader(f"The maximum value is : {largest}")
